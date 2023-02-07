@@ -8,5 +8,5 @@ echo -e "Best School\nHi"
  else
 echo "Best School"
 fi
-counter=counter+1
+let counter=counter+1
 done
