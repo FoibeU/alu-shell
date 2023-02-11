@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
-#bash script that displays the PID, process name, of bash processes
-pgrep -l bash
+#bash script to easily get the PID of your bash process
+# shellcheck disable=SC2009
+ps afux | grep bash
