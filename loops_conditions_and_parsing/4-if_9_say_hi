@@ -1,12 +1,14 @@
 #!/usr/bin/env bash
-#dispalys Best School 10 times using then
-counter=0
-while [ $counter -lt 10 ]; do
-if [ $counter -eq 8 ]
-then
-echo -e "Best School\nHi"
- else
-echo "Best School"
-fi
-let counter=counter+1
+# Displays 'Best School'. Displays Hi on the 9th iteration
+
+index=0
+
+while [ $index -lt 10 ]
+do
+  if [ $index -eq 9 ]
+  then
+    echo "Hi"
+  fi
+  echo "Best School"
+  (( index++ ))
 done
